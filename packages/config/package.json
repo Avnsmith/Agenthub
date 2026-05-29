@@ -9,5 +9,9 @@
   },
   "scripts": {
     "build": "tsc"
+  },
+  "dependencies": {
+    "viem": "^2.31.3"
   }
 }
+
