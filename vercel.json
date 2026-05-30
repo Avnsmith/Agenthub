@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "buildCommand": "pnpm run build:web",
-  "outputDirectory": "apps/web/.next",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/apps/web/$1" }
+  "builds": [
+    {
+      "src": "apps/web/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "apps/web/$1"
+    }
   ]
 }
+
