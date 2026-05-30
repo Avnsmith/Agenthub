@@ -8,3 +8,4 @@ dist/
 .env.production
 coverage/
 prisma/migrations/
+.vercel

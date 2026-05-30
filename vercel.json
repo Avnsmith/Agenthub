@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm run build:web",
+  "outputDirectory": "apps/web/.next",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/apps/web/$1" }
+  ]
+}

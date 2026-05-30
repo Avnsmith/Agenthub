@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "secret:scan": "gitleaks detect --source . --redact && trufflehog filesystem . && git-secrets --scan",
     "build": "nest build",
     "dev": "nest start --watch",
     "start": "node dist/apps/api/src/main",
